@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nombre": "Laura",
+    "apellido": "Lopez",
+    "email": "laura@email.com",
+    "activo": true
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos",
+    "apellido": "Gomez",
+    "email": "carlos@email.com",
+    "activo": true
+  },
+  {
+    "id": 1746665125737,
+    "nombre": "Ana",
+    "apellido": "Fern�ndez",
+    "email": "ana@email.com",
+    "activo": true
+  }
+]

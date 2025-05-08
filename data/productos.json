@@ -1,0 +1,26 @@
+[
+  {
+    "id": 101,
+    "nombre": "Laptop Lenovo",
+    "precio": 899999.99,
+    "disponible": true
+  },
+  {
+    "id": 102,
+    "nombre": "Auriculares JBL",
+    "precio": 30000.5,
+    "disponible": true
+  },
+  {
+    "id": 103,
+    "nombre": "Mouse Logitech",
+    "precio": 120000,
+    "disponible": false
+  },
+  {
+    "id": 1746665152761,
+    "nombre": "Teclado Mec�nico Redragon",
+    "precio": 25000,
+    "disponible": true
+  }
+]
