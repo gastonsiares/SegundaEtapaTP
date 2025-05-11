@@ -1,6 +1,11 @@
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
+import express from 'express';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const router = express.Router();
 const dataPath = path.join(__dirname, '../data/usuarios.json');
 const ventasPath = path.join(__dirname, '../data/ventas.json');
@@ -31,10 +36,8 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     const data = readJSON(dataPath);
     const newUser = { id: Date.now(), ...req.body };
-    console.log("Nuevo usuario:", newUser); // 👈 log
     data.push(newUser);
     writeJSON(dataPath, data);
-    console.log("Usuarios actualizados:", data); // 👈 log
     res.status(201).json(newUser);
 });
 
@@ -71,4 +74,4 @@ router.delete('/:id', (req, res) => {
     res.send('Usuario eliminado correctamente');
 });
 
-module.exports = router;
+export default router;

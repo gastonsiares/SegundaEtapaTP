@@ -1,12 +1,13 @@
-const express = require('express');
+import express from 'express';
+// const express = require('express');
 const app = express();
 const PORT = 3000;
 
 app.use(express.json());
 
-const usuariosRoutes = require('./routes/usuarios');
-const productosRoutes = require('./routes/productos');
-const ventasRoutes = require('./routes/ventas');
+import usuariosRoutes from './routes/usuarios.js';
+import productosRoutes from './routes/productos.js';
+import ventasRoutes from './routes/ventas.js';
 
 app.use('/usuarios', usuariosRoutes);
 app.use('/productos', productosRoutes);

@@ -19,5 +19,12 @@
     "apellido": "Fern�ndez",
     "email": "ana@email.com",
     "activo": true
+  },
+  {
+    "id": 1746998098345,
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "email": "JuanPerez@email.com",
+    "activo": true
   }
 ]

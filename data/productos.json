@@ -22,5 +22,11 @@
     "nombre": "Teclado Mec�nico Redragon",
     "precio": 25000,
     "disponible": true
+  },
+  {
+    "id": 1746998218599,
+    "nombre": "Auriculares Logitech",
+    "precio": 200000,
+    "disponible": true
   }
 ]

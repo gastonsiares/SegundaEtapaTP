@@ -17,5 +17,19 @@
         "precio_unitario": 30000.5
       }
     ]
+  },
+  {
+    "id": 1746998252968,
+    "id_usuario": 2,
+    "fecha": "2025-05-07",
+    "total": 45000,
+    "direccion": "Calle X 123",
+    "productos": [
+      {
+        "id": 101,
+        "cantidad": 1,
+        "precio_unitario": 45000
+      }
+    ]
   }
 ]

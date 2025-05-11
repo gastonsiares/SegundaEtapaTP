@@ -1,7 +1,13 @@
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
+import express from 'express';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const router = express.Router();
+
 const dataPath = path.join(__dirname, '../data/productos.json');
 
 function readJSON(path) {
@@ -27,4 +33,4 @@ router.post('/', (req, res) => {
     res.status(201).json(newProduct);
 });
 
-module.exports = router;
+export default router;
